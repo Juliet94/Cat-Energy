@@ -40,7 +40,7 @@
   <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <form class="page-main__form selection-program" method="post" action="https://echo.htmlacademy.ru/">
 
-    <fieldset>
+    <fieldset class="selection-program__fieldset">
       <legend class="visually-hidden">Основная информация</legend>
       <label class="selection-program__label"> Имя:*
         <input class="selection-program__input" type="text" placeholder="Барсик" name="pet-name" required>
@@ -53,7 +53,7 @@
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="selection-program__fieldset">
       <legend class="visually-hidden">Цель программы</legend>
       <label class="selection-program__label">
         <input class="visually-hidden" type="radio" name="goal" value="lose-weight" checked>
@@ -69,7 +69,7 @@
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="selection-program__fieldset">
       <legend class="selection-program__legend">Контактные данные (владельца кота)</legend>
       <label class="selection-program__label"> E-mail:*
         <input class="selection-program__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
@@ -79,14 +79,14 @@
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="selection-program__fieldset">
       <legend class="selection-program__legend">Комментарий</legend>
       <label>
         <textarea class="selection-program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="selection-program__fieldset">
       <legend class="selection-program__legend">Дополнительно</legend>
       <label class="selection-program__label">
         <input class="visually-hidden" type="checkbox" name="sweetener" value="need-sweetener" checked>
