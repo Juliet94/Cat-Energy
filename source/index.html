@@ -7,27 +7,27 @@
 <body class="page__body">
 
 <header class="page-header">
-  <a class="page-header__logo">
-    <img src="" alt="Логотип Кэт энерджи">
-    <img src="" alt="Cat Energy">
+  <a class="page-header__logo logo">
+    <img class="logo__img--mobile" src="" alt="Логотип Кэт энерджи">
+    <img class="logo__img--mobile-text" src="" alt="Cat Energy">
   </a>
   <nav class="header-nav">
     <button class="header-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <ul class="header-nav__list menu-list reset-list-styles">
+    <ul class="header-nav__list menu-list">
       <li class="menu-list__item menu-list__item--current">
-        <a>
+        <a class="menu-list__link">
           Главная
         </a>
       </li>
       <li class="menu-list__item">
-        <a href="#">
+        <a class="menu-list__link" href="#">
           Каталог продукции
         </a>
       </li>
       <li class="menu-list__item">
-        <a href="#">
+        <a class="menu-list__link" href="#">
           Подбор программы
         </a>
       </li>
@@ -36,13 +36,15 @@
 </header>
 
 <main class="page-main">
-  <h1 class="page-main__title">Функциональное питание для котов</h1>
-  <p class="page-main__slogan">Занялся собой? Займись котом!</p>
-  <a class="page-main__link button-link" href="#">Подобрать программу</a>
+  <div class="caption">
+    <h1 class="caption__title">Функциональное питание для котов</h1>
+    <p class="caption__slogan">Занялся собой? Займись котом!</p>
+    <a class="caption__link button-link" href="#">Подобрать программу</a>
+  </div>
 
   <section class="program">
     <h2 class="visually-hidden">Выбор программы</h2>
-    <ul class="program__list reset-list-styles">
+    <ul class="program__list">
       <li class="program__item program-option">
         <h3 class="program-option__title">Похудение</h3>
         <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -59,8 +61,8 @@
   </section>
 
   <section class="features">
-    <h2 class="features-title">Как это работает</h2>
-    <ul class="features__list reset-list-styles">
+    <h2 class="features__title">Как это работает</h2>
+    <ul class="features__list">
       <li class="features__item">
         <p>Функциональное питание содержит только полезные питательные вещества.</p>
       </li>
@@ -109,11 +111,13 @@
     <img src="" alt="Местонахождение магазина на карте">
   </section>
 
-  <img src="" alt="Cat Energy">
+  <a class="page-footer__logo logo">
+    <img src="" alt="Cat Energy">
+  </a>
 
   <section class="page-footer__social social">
     <h2 class="visually-hidden">Социальные сети</h2>
-    <ul class="social__list reset-list-styles">
+    <ul class="social__list">
       <li class="social__item">
         <a href="#" class="social__link">
           <span class="visually-hidden">VKontakte</span>
@@ -132,13 +136,13 @@
     </ul>
   </section>
 
-  <section class="page-footer__copyright copyright">
+  <div class="page-footer__copyright copyright">
     <h2 class="visually-hidden">Разработчик сайта</h2>
     <span>HTML Academy</span>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="" alt="Логотип HTML Academy">
+      <img class="logo__img--footer" src="" alt="Логотип HTML Academy">
     </a>
-  </section>
+  </div>
 </footer>
 
 </body>
