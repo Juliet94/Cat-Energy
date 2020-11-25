@@ -1,0 +1,8 @@
+.menu-list {
+  @include reset-list-style;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  color: $basic-black;
+}
