@@ -4,8 +4,7 @@
 }
 
 .features__title {
-  font-family: $special-font-family;
-  font-weight: 400;
+  font-weight: inherit;
   font-size: 36px;
   line-height: 1.1;
   color: $basic-black;
@@ -17,8 +16,6 @@
 
 .features__item {
   font-family: $basic-font-family;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.3;
   color: $basic-grey-text;
 }

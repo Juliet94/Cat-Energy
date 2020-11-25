@@ -4,8 +4,6 @@
 }
 
 .location__slogan {
-  font-family: $special-font-family;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -14,8 +12,6 @@
 
 .location__address {
   font-family: $basic-font-family;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.4;
   color: $basic-grey-text;
 }

@@ -1,19 +1,16 @@
 .caption {
-  font-family: $special-font-family;
   color: $basic-white;
   background-image: linear-gradient(to bottom, $basic-green 70%, $basic-white 70%);
 }
 
 .caption__title {
-  font-weight: 400;
+  font-weight: inherit;
   font-size: 36px;
   line-height: 1;
   text-align: center;
 }
 
 .caption__slogan {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
