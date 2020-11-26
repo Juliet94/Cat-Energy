@@ -1,0 +1,42 @@
+.live-example {
+  color: $basic-black;
+  background-color: $special-grey;
+  padding: 25px 20px;
+}
+
+.live-example__title {
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.live-example__text {
+  font-family: $basic-font-family;
+  line-height: 1.3;
+  color: $basic-grey-text;
+}
+
+.live-example__quantity {
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.live-example__small {
+  font-family: $basic-font-family;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: lowercase;
+  color: $basic-grey-text;
+}
+
+.live-example__expenses {
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.live-example__was-became {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}

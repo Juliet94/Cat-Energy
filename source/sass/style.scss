@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+/* Global */
+
+@import "global/fonts";
+@import "global/variables";
+@import "global/box-sizing";
+@import "global/visually-hidden";
+@import "global/mixins";
+
+/* Blocks */
+
+@import "blocks/page";
+@import "blocks/header-nav";
+@import "blocks/page-main";
+@import "blocks/menu-list";
+@import "blocks/caption";
+@import "blocks/button-link";
+@import "blocks/program";
+@import "blocks/program-option";
+@import "blocks/features";
+@import "blocks/live-example";
+@import "blocks/page-footer";
+@import "blocks/location";
+@import "blocks/social";
+@import "blocks/copyright";
