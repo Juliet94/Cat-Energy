@@ -1,0 +1,53 @@
+.selection-program {
+  font-size: 16px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  background-color: $basic-white;
+}
+
+.selection-program__fieldset {
+  padding: 25px 20px;
+  border: none;
+}
+
+.selection-program__label {
+  color: $basic-grey-text;
+}
+
+.selection-program__input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  color: $basic-grey-text;
+}
+
+.selection-program__radio {
+  color: $special-grey-text-lighter;
+}
+
+.selection-program__legend {
+  font-size: 24px;
+  text-transform: none;
+  color: $basic-black;
+  margin-bottom: 15px;
+}
+
+.selection-program__textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  color: $basic-grey-text;
+}
+
+.selection-program__checkbox {
+  color: $basic-black;
+}
+
+.selection-program__small {
+  font-family: $basic-font-family;
+  font-size: 14px;
+  text-transform: none;
+  color: $basic-black;
+}
