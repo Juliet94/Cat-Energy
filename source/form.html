@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи: Форма</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
 
@@ -37,7 +38,7 @@
 
 <main class="page-main">
   <h1 class="page-main__title">Подбор программы</h1>
-  <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <form class="page-main__form selection-program" method="post" action="https://echo.htmlacademy.ru/">
 
     <fieldset class="selection-program__fieldset">
@@ -55,15 +56,15 @@
 
     <fieldset class="selection-program__fieldset">
       <legend class="visually-hidden">Цель программы</legend>
-      <label class="selection-program__label">
+      <label class="selection-program__radio">
         <input class="visually-hidden" type="radio" name="goal" value="lose-weight" checked>
         Похудение
       </label>
-      <label class="selection-program__label">
+      <label class="selection-program__radio">
         <input class="visually-hidden" type="radio" name="goal" value="gain-weight">
         Набор массы
       </label>
-      <label class="selection-program__label">
+      <label class="selection-program__radio">
         <input class="visually-hidden" type="radio" name="goal" value="need-help">
         Не знаю (нужен ваш совет)
       </label>
@@ -88,19 +89,19 @@
 
     <fieldset class="selection-program__fieldset">
       <legend class="selection-program__legend">Дополнительно</legend>
-      <label class="selection-program__label">
+      <label class="selection-program__checkbox">
         <input class="visually-hidden" type="checkbox" name="sweetener" value="need-sweetener" checked>
         Сахарозаменитель
       </label>
-      <label class="selection-program__label">
+      <label class="selection-program__checkbox">
         <input class="visually-hidden" type="checkbox" name="water" value="need-water">
         Питьевая вода
       </label>
-      <label class="selection-program__label">
+      <label class="selection-program__checkbox">
         <input class="visually-hidden" type="checkbox" name="milk" value="need-milk">
         Молоко
       </label>
-      <label class="selection-program__label">
+      <label class="selection-program__checkbox">
         <input class="visually-hidden" type="checkbox" name="vitamin" value="need-vitamin">
         Витамины
       </label>
