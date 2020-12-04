@@ -1,21 +1,46 @@
 .features {
-  padding: 27px 20px 42px 21px;
+  padding: 0 20px;
   background-color: $basic-white;
+
+  @media (min-width: $tablet) {
+    padding: 0 100px 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 100px;
+  }
 }
 
 .features__title {
-  font-weight: inherit;
   font-size: 36px;
+  font-weight: inherit;
   line-height: 1.1;
   color: $basic-black;
 }
 
 .features__list {
   @include reset-list-style;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 150px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+  }
 }
 
 .features__item {
+  margin-left: 60px;
   font-family: $basic-font-family;
   line-height: 1.3;
   color: $basic-grey-text;
+
+  @media (min-width: $tablet) {
+    margin-top: 80px;
+    margin-left: 0;
+  }
 }

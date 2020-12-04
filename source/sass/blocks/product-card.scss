@@ -8,8 +8,8 @@
 }
 
 .product-card__title {
-  font-weight: inherit;
   font-size: 16px;
+  font-weight: inherit;
   line-height: 1.25;
   text-transform: uppercase;
 }
@@ -51,8 +51,8 @@
 .product-card__link-more {
   font-size: 16px;
   line-height: 1.25;
-  text-transform: uppercase;
   text-decoration: none;
   color: $basic-grey-text;
+  text-transform: uppercase;
   background-color: $basic-grey;
 }
