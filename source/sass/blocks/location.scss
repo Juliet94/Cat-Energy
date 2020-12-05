@@ -1,6 +1,6 @@
 .location {
   position: relative;
-  background-color: $basic-white;
+  background-color: $basic-grey;
 }
 
 .location__wrapper {
@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
+  background-color: $basic-white;
 
   @media (min-width: $tablet) {
     padding: 50px 70px;

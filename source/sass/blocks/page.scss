@@ -3,8 +3,12 @@
 }
 
 .page__body {
+  display: grid;
+  min-height: 100%;
   margin: 0;
   font-family: $special-font-family;
   font-size: 14px;
   font-weight: 400;
+  background-color: $page-background;
+  grid-template-rows: min-content 1fr min-content;
 }
