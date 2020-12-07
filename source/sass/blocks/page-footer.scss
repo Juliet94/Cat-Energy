@@ -1,5 +1,28 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
 .page-footer__location {
   margin: 0;
+}
+
+.page-footer__wrapper {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    @include container;
+    padding: 0 100px;
+  }
 }
 
 .page-footer__logo {

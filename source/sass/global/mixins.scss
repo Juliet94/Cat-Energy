@@ -3,3 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
+}

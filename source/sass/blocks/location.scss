@@ -1,17 +1,69 @@
 .location {
+  position: relative;
+  background-color: $basic-grey;
+}
+
+.location__wrapper {
+  @include flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
   background-color: $basic-white;
-  padding: 28px 19px 22px 19px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 70px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 10;
+    width: 570px;
+    height: 201px;
+    background-color: $basic-white;
+  }
 }
 
 .location__slogan {
+  margin: 0;
   font-size: 16px;
   line-height: 1.1;
-  text-transform: uppercase;
   color: $special-grey-text;
+  text-transform: uppercase;
 }
 
 .location__address {
+  @include flex;
+  flex-direction: column;
   font-family: $basic-font-family;
   line-height: 1.4;
   color: $basic-grey-text;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: flex-start;
+  }
+}
+
+.location__street {
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.location__map {
+  width: 100%;
 }

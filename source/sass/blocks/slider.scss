@@ -1,0 +1,59 @@
+.slider {
+  position: relative;
+}
+
+.slider__text {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.slider__field {
+  position: relative;
+  width: 35%;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $slider-border;
+  border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    width: 80%;
+    height: 6px;
+    background-color: $slider-scale;
+    border: none;
+  }
+}
+
+.slider__control {
+  position: relative;
+  top: 20%;
+  left: 5%;
+  width: 45%;
+  height: 7px;
+  background-color: $basic-green;
+  border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    top: -270%;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    background-color: $basic-white;
+    border-radius: 100%;
+  }
+}
+
+.slider__control-dot {
+  display: none;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    top: 39%;
+    left: 39%;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: $basic-green;
+    border-radius: 100%;
+  }
+}

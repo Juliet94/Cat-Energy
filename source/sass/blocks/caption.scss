@@ -1,22 +1,63 @@
 .caption {
+  @include flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 480px;
+  padding: 0 20px;
   color: $basic-white;
   background-image: linear-gradient(to bottom, $basic-green 70%, $basic-white 70%);
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+    padding: 0 110px;
+    color: $basic-black;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop) {
+    @include container;
+  }
+}
+
+.caption__wrapper {
+  width: 100%;
 }
 
 .caption__title {
-  font-weight: inherit;
   font-size: 36px;
+  font-weight: inherit;
   line-height: 1;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .caption__slogan {
   line-height: 1;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .caption__link {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
   text-decoration: none;
-  margin: 20px;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 10px 25px;
+  }
 }

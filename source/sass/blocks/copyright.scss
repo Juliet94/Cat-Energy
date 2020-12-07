@@ -1,6 +1,12 @@
 .copyright {
+  @include flex;
+  justify-content: space-between;
+  width: 100%;
   background-color: $basic-grey;
-  padding: 22px 20px;
+
+  @media (min-width: $tablet) {
+    width: 33%;
+  }
 }
 
 .copyright__link {

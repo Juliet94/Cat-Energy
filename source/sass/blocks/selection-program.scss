@@ -18,8 +18,8 @@
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  text-transform: inherit;
   color: $basic-grey-text;
+  text-transform: inherit;
 }
 
 .selection-program__radio {
@@ -27,18 +27,18 @@
 }
 
 .selection-program__legend {
-  font-size: 24px;
-  text-transform: none;
-  color: $basic-black;
   margin-bottom: 15px;
+  font-size: 24px;
+  color: $basic-black;
+  text-transform: none;
 }
 
 .selection-program__textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  text-transform: inherit;
   color: $basic-grey-text;
+  text-transform: inherit;
 }
 
 .selection-program__checkbox {
@@ -48,6 +48,6 @@
 .selection-program__small {
   font-family: $basic-font-family;
   font-size: 14px;
-  text-transform: none;
   color: $basic-black;
+  text-transform: none;
 }

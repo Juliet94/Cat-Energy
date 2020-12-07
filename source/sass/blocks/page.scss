@@ -3,8 +3,11 @@
 }
 
 .page__body {
-  margin: 0;
+  display: grid;
+  min-height: 100%;
+  margin: 0 auto;
   font-family: $special-font-family;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  grid-template-rows: min-content 1fr min-content;
 }
