@@ -1,23 +1,6 @@
 .live-example {
   display: grid;
-  padding: 25px 20px;
-  color: $basic-black;
-  background-color: $special-grey;
   grid-template-columns: 1fr;
-
-  @media (min-width: $tablet) {
-    padding: 25px 30px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 25px 100px;
-    grid-template-areas:
-      "title img"
-      "text img"
-      "info img"
-      "expenses slider";
-  }
 }
 
 .live-example__title {
@@ -30,7 +13,38 @@
   }
 
   @media (min-width: $desktop) {
-    grid-area: title;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
+
+.live-example__wrapper {
+  @media (min-width: $desktop) {
+    background-color: $basic-grey;
+  }
+}
+
+.live-example__inner-wrapper {
+  display: grid;
+  padding: 25px 20px;
+  color: $basic-black;
+  background-color: $special-grey;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet) {
+    padding: 25px 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    @include container;
+    padding: 25px 100px;
+    background-color: $basic-grey;
+    grid-template-areas:
+      "text img"
+      "info img"
+      "expenses slider";
   }
 }
 

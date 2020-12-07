@@ -14,6 +14,10 @@
     color: $basic-black;
     background-image: none;
   }
+
+  @media (min-width: $desktop) {
+    @include container;
+  }
 }
 
 .caption__wrapper {

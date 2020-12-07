@@ -1,5 +1,5 @@
 .page-footer {
-  @include container;
+  background-color: $basic-grey;
 }
 
 .page-footer__location {
@@ -13,7 +13,6 @@
   flex-direction: column;
   width: 100%;
   padding: 0 20px;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -21,6 +20,7 @@
   }
 
   @media (min-width: $desktop) {
+    @include container;
     padding: 0 100px;
   }
 }
