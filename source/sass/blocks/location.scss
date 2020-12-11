@@ -8,11 +8,12 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 28px 20px;
   background-color: $basic-white;
 
   @media (min-width: $tablet) {
-    padding: 50px 70px;
+    min-height: 201px;
+    padding: 60px 71px;
   }
 
   @media (min-width: $desktop) {
@@ -32,6 +33,12 @@
   line-height: 1.1;
   color: $special-grey-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-top: 3px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .location__address {
@@ -44,6 +51,8 @@
   @media (min-width: $tablet) {
     justify-content: flex-start;
     align-items: flex-end;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   @media (min-width: $desktop) {
@@ -55,7 +64,7 @@
   margin: 0;
 
   @media (min-width: $tablet) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: right;
   }
 
@@ -66,4 +75,8 @@
 
 .location__map {
   width: 100%;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 95px;
+  }
 }

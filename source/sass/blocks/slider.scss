@@ -6,11 +6,16 @@
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .slider__field {
   position: relative;
-  width: 35%;
+  width: 43%;
   height: 14px;
   background-color: $basic-white;
   border: 1px solid $slider-border;
@@ -21,6 +26,10 @@
     height: 6px;
     background-color: $slider-scale;
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 74%;
   }
 }
 
@@ -40,6 +49,10 @@
     height: 34px;
     background-color: $basic-white;
     border-radius: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    left: 46.5%;
   }
 }
 
