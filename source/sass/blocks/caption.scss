@@ -7,12 +7,19 @@
   min-height: 480px;
   padding: 5px 20px 0 20px;
   color: $basic-white;
-  background-image: linear-gradient(to bottom, $basic-green 63%, $basic-white 63%);
+
+  @media (max-width: $mobile) {
+    background-image: linear-gradient(to bottom, fade-out($basic-green, 0.15) 63%, $basic-white 63%),
+      url("../img/index-background.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+  }
 
   @media (min-width: $tablet) {
     justify-content: flex-start;
     min-height: 845px;
-    padding: 0 117px;
+    padding: 0 117px 0 112px;
     color: $basic-black;
     background-image: none;
   }
@@ -39,10 +46,12 @@
     margin-top: 33px;
     font-size: 60px;
     text-align: left;
+    margin-left: 5px;
   }
 
   @media (min-width: $desktop) {
     margin-top: 54px;
+    margin-left: 0;
   }
 }
 
@@ -54,6 +63,11 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     text-align: left;
+    margin-left: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
   }
 }
 
@@ -72,13 +86,8 @@
     min-width: 244px;
     min-height: 54px;
     margin-top: 29px;
-    margin-left: -5px;
     padding: 14px 25px;
     font-size: 20px;
     line-height: 1;
-  }
-
-  @media (min-width: $desktop) {
-    margin-left: 0;
   }
 }

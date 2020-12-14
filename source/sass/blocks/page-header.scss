@@ -10,7 +10,9 @@
       width: 50%;
       height: 694px;
       content: "";
-      background-color: fade-out($basic-green, 0.15);
+      background-image: linear-gradient(fade-out($basic-green, 0.15) 100%, transparent 100%),
+        url("../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
     }
   }
 }
