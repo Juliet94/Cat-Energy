@@ -1,21 +1,32 @@
 .live-example {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (max-width: $mobile) {
+    background-color: $special-grey;
+  }
 }
 
 .live-example__title {
+  margin-top: 25px;
+  margin-bottom: 21px;
+  margin-left: 20px;
   font-size: 36px;
   font-weight: inherit;
   line-height: 1.1;
 
   @media (min-width: $tablet) {
+    margin-top: 28px;
+    margin-left: 30px;
+    font-size: 60px;
+    line-height: 1;
     grid-column: 1/3;
   }
 
   @media (min-width: $desktop) {
     width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
+    max-width: 1220px;
+    margin: 10px auto 75px;
   }
 }
 
@@ -27,20 +38,23 @@
 
 .live-example__inner-wrapper {
   display: grid;
-  padding: 25px 20px;
+  padding: 0 20px;
   color: $basic-black;
   background-color: $special-grey;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet) {
     padding: 25px 30px;
+    background-color: $basic-white;
+    background-image: linear-gradient(to bottom, $basic-white 75%, $special-grey 75%);
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop) {
     @include container;
-    padding: 25px 100px;
+    padding: 54px 110px 70px;
     background-color: $basic-grey;
+    background-image: none;
     grid-template-areas:
       "text img"
       "info img"
@@ -49,60 +63,99 @@
 }
 
 .live-example__text {
+  width: 96%;
+  margin-bottom: 28px;
   font-family: $basic-font-family;
   line-height: 1.3;
   color: $basic-grey-text;
 
   @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.5;
     grid-column: 1/3;
   }
 
   @media (min-width: $desktop) {
-    width: 60%;
+    width: 72%;
     grid-area: text;
   }
 }
 
 .live-example__info-wrapper {
   @include flex;
+  position: relative;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  margin-bottom: 30px;
   justify-self: center;
 
   @media (min-width: $tablet) {
     width: 80%;
+    min-width: 366px;
+    margin-top: 28px;
     grid-column: 1/2;
     justify-self: left;
   }
 
   @media (min-width: $desktop) {
     width: 40%;
+    margin-top: 40px;
+    margin-bottom: 0;
     grid-area: info;
   }
 }
 
 .live-example__info {
   @include flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
+  min-width: 124px;
+  padding-top: 14px;
+  border: 1px solid $slider-border;
+  border-radius: 3px;
+
+  @media (min-width: $tablet) {
+    min-width: 162px;
+    min-height: 70px;
+  }
 }
 
 .live-example__quantity {
+  margin-bottom: -5px;
   font-size: 24px;
   line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 1.2;
+  }
 }
 
 .live-example__small {
-  width: 25%;
+  position: relative;
+  top: 14px;
+  display: block;
+  width: 60%;
   font-family: $basic-font-family;
   font-size: 12px;
   line-height: 1;
+  text-align: center;
   color: $basic-grey-text;
   text-transform: lowercase;
+  background-color: $special-grey;
 
   @media (min-width: $tablet) {
-    width: 100%;
+    top: 16px;
+    width: 90%;
+    font-size: 14px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop) {
+    top: 17px;
+    background-color: $basic-grey;
   }
 }
 
@@ -113,6 +166,9 @@
     @include flex;
     align-items: flex-end;
     flex-direction: column;
+    margin-top: 35px;
+    font-size: 20px;
+    line-height: 1;
     grid-column: 2/3;
     justify-self: right;
   }
@@ -120,13 +176,15 @@
   @media (min-width: $desktop) {
     justify-content: space-between;
     flex-direction: row;
-    width: 40%;
+    width: 53.5%;
+    margin-top: 60px;
     grid-area: expenses;
     justify-self: left;
   }
 }
 
 .live-example__expenses {
+  font-size: 20px;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -147,15 +205,21 @@
   @include flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 70%;
+  margin-bottom: 30px;
   justify-self: center;
 
   @media (min-width: $tablet) {
-    width: 90%;
+    width: 80%;
     grid-column: 1/3;
   }
 
   @media (min-width: $desktop) {
+    align-self: end;
+    width: 93.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
     grid-area: slider;
   }
 }

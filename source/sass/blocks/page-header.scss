@@ -1,22 +1,101 @@
 .page-header {
-  padding: 0 20px;
-  background-color: $basic-white;
-
-  @media (min-width: $tablet) {
-    @include flex;
-    justify-content: space-between;
-    padding: 0 30px;
-  }
+  position: relative;
 
   @media (min-width: $desktop) {
-    @include container;
-    padding: 0 110px;
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+      width: 50%;
+      height: 694px;
+      content: "";
+      background-image: linear-gradient(fade-out($basic-green, 0.15) 100%, transparent 100%),
+        url("../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.page-header--menu-nojs {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+.page-header--menu-open {
+  .page-header__toggle {
+    width: 18px;
+    height: 18px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 32px;
+      right: 18px;
+      width: 24px;
+      height: 1.5px;
+      content: "";
+      background-color: $basic-black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.page-header--menu-closed {
+  .page-header__toggle {
+    width: 24px;
+    height: 16px;
+
+    &::before {
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      width: 24px;
+      height: 1.5px;
+      content: "";
+      background-color: $basic-black;
+      box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+    }
+  }
+
+  .header-nav {
+    display: none;
   }
 }
 
 .page-header__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    @include flex;
+    justify-content: space-between;
+    padding: 42px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    @include container;
+    padding: 70px 110px;
+  }
+}
+
+.page-header__logo-wrapper {
   @include flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  @media (max-width: $mobile) {
+    position: relative;
+    min-height: 66px;
+  }
 }
 
 .page-header__logo {
@@ -24,8 +103,8 @@
 }
 
 .page-header__toggle {
-  width: 18px;
-  height: 18px;
+  background-color: $basic-white;
+  border: none;
 
   @media (min-width: $tablet) {
     display: none;
