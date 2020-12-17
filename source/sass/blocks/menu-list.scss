@@ -1,6 +1,13 @@
 .menu-list {
   @include reset-list-style;
   position: relative;
+  color: $basic-black;
+
+  &--change-color {
+    @media (min-width: $desktop) {
+      color: $basic-white;
+    }
+  }
 }
 
 .menu-list__item {
@@ -20,11 +27,7 @@
 
 .menu-list__link {
   text-decoration: none;
-  color: $basic-black;
-
-  @media (min-width: $desktop) {
-    color: $basic-white;
-  }
+  color: inherit;
 }
 
 .menu-list__item--current::before {
@@ -39,6 +42,11 @@
 
   @media (min-width: $desktop) {
     top: 35px;
+  }
+}
+
+.menu-list__item--current-with-background::before {
+  @media (min-width: $desktop) {
     background-color: $basic-white;
   }
 }

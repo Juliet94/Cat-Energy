@@ -2,43 +2,50 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи: Форма</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
 
-<header class="page-header">
-  <a class="page-header__logo logo" href="index.html">
-    <img class="logo__img" src="" alt="Логотип Кэт энерджи">
-    <img class="logo__img-text" src="" alt="Cat Energy">
-  </a>
-  <nav class="header-nav">
-    <button class="header-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <ul class="header-nav__list menu-list">
-      <li class="menu-list__item">
-        <a class="menu-list__link" href="index.html">
-          Главная
-        </a>
-      </li>
-      <li class="menu-list__item">
-        <a class="menu-list__link" href="catalog.html">
-          Каталог продукции
-        </a>
-      </li>
-      <li class="menu-list__item menu-list__item--current">
-        <a class="menu-list__link">
-          Подбор программы
-        </a>
-      </li>
-    </ul>
-  </nav>
+<header class="page-header page-header--menu-nojs">
+  <div class="page-header__wrapper">
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo logo">
+        <img class="logo__img" src="" alt="Логотип Кэт энерджи">
+        <img class="logo__img-text" src="" alt="Cat Energy">
+      </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav__list menu-list">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="menu-list__item menu-list__item--current">
+          <a class="menu-list__link">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main class="page-main">
-  <h1 class="page-main__title">Подбор программы</h1>
-  <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <div class="page-main__heading">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  </div>
   <form class="page-main__form selection-program" method="post" action="https://echo.htmlacademy.ru/">
 
     <fieldset class="selection-program__fieldset">
@@ -70,7 +77,7 @@
       </label>
     </fieldset>
 
-    <fieldset class="selection-program__fieldset">
+    <fieldset class="selection-program__fieldset selection-program__fieldset--contacts">
       <legend class="selection-program__legend">Контактные данные (владельца кота)</legend>
       <label class="selection-program__label"> E-mail:*
         <input class="selection-program__input" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
@@ -80,35 +87,38 @@
       </label>
     </fieldset>
 
-    <fieldset class="selection-program__fieldset">
+    <fieldset class="selection-program__fieldset selection-program__fieldset--comment">
       <legend class="selection-program__legend">Комментарий</legend>
       <label>
         <textarea class="selection-program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
       </label>
     </fieldset>
 
-    <fieldset class="selection-program__fieldset">
+    <fieldset class="selection-program__fieldset selection-program__fieldset--extra">
       <legend class="selection-program__legend">Дополнительно</legend>
-      <label class="selection-program__checkbox">
-        <input class="visually-hidden" type="checkbox" name="sweetener" value="need-sweetener" checked>
-        Сахарозаменитель
-      </label>
-      <label class="selection-program__checkbox">
-        <input class="visually-hidden" type="checkbox" name="water" value="need-water">
-        Питьевая вода
-      </label>
-      <label class="selection-program__checkbox">
-        <input class="visually-hidden" type="checkbox" name="milk" value="need-milk">
-        Молоко
-      </label>
-      <label class="selection-program__checkbox">
-        <input class="visually-hidden" type="checkbox" name="vitamin" value="need-vitamin">
-        Витамины
-      </label>
+      <div class="selection-program__extra">
+        <label class="selection-program__checkbox">
+          <input class="visually-hidden" type="checkbox" name="sweetener" value="need-sweetener" checked>
+          Сахарозаменитель
+        </label>
+        <label class="selection-program__checkbox">
+          <input class="visually-hidden" type="checkbox" name="water" value="need-water">
+          Питьевая вода
+        </label>
+        <label class="selection-program__checkbox">
+          <input class="visually-hidden" type="checkbox" name="milk" value="need-milk">
+          Молоко
+        </label>
+        <label class="selection-program__checkbox">
+          <input class="visually-hidden" type="checkbox" name="vitamin" value="need-vitamin">
+          Витамины
+        </label>
+      </div>
     </fieldset>
-
-    <button class="selection-program__button button-link" type="submit">Отправить заявку</button>
-    <small class="selection-program__small">* &mdash; Обязательные поля</small>
+    <div class="selection-program__note">
+      <button class="selection-program__button button-link" type="submit">Отправить заявку</button>
+      <small class="selection-program__small">* &mdash; Обязательные поля</small>
+    </div>
   </form>
 </main>
 
@@ -116,42 +126,48 @@
 
   <section class="page-footer__location location">
     <h2 class="visually-hidden">Адрес магазина</h2>
-    <p class="location__slogan">Приглашаем к сотрудничеству дилеров!</p>
-    <p class="location__address">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    <img src="" alt="Местонахождение магазина на карте">
+    <div class="location__wrapper">
+      <p class="location__slogan">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+      <div class="location__address">
+        <p class="location__street">ул.Большая <br> Конюшенная, д. 19/8</p>
+        <span>Санкт-Петербург</span>
+      </div>
+    </div>
+    <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4114.250074504224!2d30.324396429938936!3d59.93939762075931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607085306655!5m2!1sru!2sru;iwlock=NoSuchMarker;" width="320" height="362" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </section>
-
-  <a class="page-footer__logo logo logo--footer">
-    <img src="" alt="Cat Energy">
-  </a>
-
-  <section class="page-footer__social social">
-    <h2 class="visually-hidden">Социальные сети</h2>
-    <ul class="social__list">
-      <li class="social__item">
-        <a href="#" class="social__link">
-          <span class="visually-hidden">VKontakte</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="#" class="social__link">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <div class="page-footer__copyright copyright">
-    <h2 class="visually-hidden">Разработчик сайта</h2>
-    <span>HTML Academy</span>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="" alt="Логотип HTML Academy">
+  <div class="page-footer__wrapper">
+    <a class="page-footer__logo logo logo--footer">
+      <img src="" alt="Cat Energy">
     </a>
+
+    <section class="page-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">VKontakte</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="page-footer__copyright copyright">
+      <h2 class="visually-hidden">Разработчик сайта</h2>
+      <span>HTML Academy</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="" alt="Логотип HTML Academy">
+      </a>
+    </div>
   </div>
 </footer>
 
