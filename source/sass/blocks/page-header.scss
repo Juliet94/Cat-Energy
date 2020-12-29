@@ -14,6 +14,13 @@
         background-image: linear-gradient(fade-out($basic-green, 0.15) 100%, transparent 100%),
           url("../img/index-background-desktop.jpg");
         background-repeat: no-repeat;
+
+        @media (min-resolution: 2dppx) {
+          background-image: linear-gradient(fade-out($basic-green, 0.15) 100%, transparent 100%),
+            url("../img/index-background-desktop@x2.jpg");
+          background-size: cover,
+            720px 695px;
+        }
       }
     }
   }

@@ -9,11 +9,22 @@
   color: $basic-white;
 
   @media (max-width: $mobile) {
-    background-image: linear-gradient(to bottom, fade-out($basic-green, 0.15) 63%, $basic-white 63%),
+    background-image: url("../img/index-can-mobile.png"),
+      linear-gradient(to bottom, fade-out($basic-green, 0.15) 63%, $basic-white 63%),
       url("../img/index-background.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100%;
+    background-position: 50% 80%,
+      0 0,
+      0 0;
+    background-size: 280px 270px,
+      100%,
+      100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-mobile@x2.png"),
+        linear-gradient(to bottom, fade-out($basic-green, 0.15) 63%, $basic-white 63%),
+        url("../img/index-background@x2.jpg");
+    }
   }
 
   @media (min-width: $tablet) {
@@ -21,13 +32,27 @@
     min-height: 845px;
     padding: 0 117px 0 112px;
     color: $basic-black;
-    background-image: none;
+    background-image: url("../img/index-can-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 709px 609px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@x2.png");
+    }
   }
 
   @media (min-width: $desktop) {
     @include container;
     min-height: 607px;
     padding: 0 190px;
+    background-image: url("../img/index-can-desktop.png");
+    background-position: 63% 0;
+    background-size: 552px 499px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-desktop@x2.png");
+    }
   }
 }
 
