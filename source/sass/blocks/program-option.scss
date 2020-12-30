@@ -13,6 +13,7 @@
 }
 
 .program-option__title {
+  position: relative;
   margin-left: 70px;
   font-size: 24px;
   font-weight: inherit;
@@ -21,11 +22,70 @@
   color: $basic-black;
   text-transform: uppercase;
 
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: -67px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+
+  &--lose::after {
+    position: absolute;
+    top: -10px;
+    left: -62px;
+    width: 36px;
+    height: 50px;
+    content: "";
+    background-image: url("../img/svg/index-cat-sit.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--gain::after {
+    position: absolute;
+    top: 5px;
+    left: -78px;
+    width: 67px;
+    height: 28px;
+    content: "";
+    background-image: url("../img/svg/index-cat-stand.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   @media (min-width: $tablet) {
     margin-bottom: 25px;
     margin-left: 2px;
     font-size: 36px;
     line-height: 1;
+
+    &::before {
+      top: 14px;
+      right: 10px;
+      left: unset;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--lose::after {
+      top: 3px;
+      right: 40px;
+      left: unset;
+      width: 140px;
+      height: 192px;
+    }
+
+    &--gain::after {
+      top: 56px;
+      right: -20px;
+      left: unset;
+      width: 268px;
+      height: 112px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -33,7 +93,31 @@
     text-align: center;
 
     &--position {
-      margin-left: 60px;
+      padding-left: 45px;
+    }
+
+    &::before {
+      top: -30px;
+      right: unset;
+      left: -20px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--lose::after {
+      top: -35px;
+      right: unset;
+      left: -5px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--gain::after {
+      top: -10px;
+      right: unset;
+      left: -37px;
+      width: 134px;
+      height: 56px;
     }
   }
 }
@@ -74,6 +158,17 @@
   color: $basic-black;
   text-transform: uppercase;
 
+  &::after {
+    position: absolute;
+    top: 7px;
+    left: 118%;
+    width: 32px;
+    height: 10px;
+    content: "";
+    background-image: url("../img/svg/index-icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (max-width: $mobile) {
     &::before {
       position: absolute;
@@ -88,5 +183,9 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 1.5;
+
+    &::after {
+      left: 127%;
+    }
   }
 }
