@@ -1,5 +1,6 @@
 .features {
   position: relative;
+  min-height: 420px;
   padding: 0 20px 16px 20px;
   background-color: $basic-white;
 
@@ -61,7 +62,7 @@
 
 .features__item {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   margin-left: 80px;
   font-family: $basic-font-family;
   line-height: 1.3;

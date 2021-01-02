@@ -5,7 +5,7 @@
   align-items: flex-start;
   flex-direction: column;
   min-height: 480px;
-  padding: 5px 20px 0 20px;
+  padding: 2px 20px 0 20px;
   color: $basic-white;
 
   @media (max-width: $mobile) {
@@ -45,9 +45,9 @@
   @media (min-width: $desktop) {
     @include container;
     min-height: 607px;
-    padding: 0 190px;
+    padding: 40px 190px;
     background-image: url("../img/index-can-desktop.png");
-    background-position: 63% 0;
+    background-position: 63% 10px;
     background-size: 552px 499px;
 
     @media (min-resolution: 2dppx) {
@@ -61,6 +61,7 @@
 }
 
 .caption__title {
+  margin-bottom: 26px;
   font-size: 36px;
   font-weight: inherit;
   line-height: 1;
@@ -69,6 +70,7 @@
   @media (min-width: $tablet) {
     width: 100%;
     margin-top: 33px;
+    margin-bottom: 40px;
     margin-left: 5px;
     font-size: 60px;
     text-align: left;
@@ -92,14 +94,16 @@
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 23px;
     margin-left: 0;
   }
 }
 
 .caption__link {
   display: block;
+  min-height: 40px;
   margin-bottom: 0;
-  padding: 10px 0;
+  padding: 11px 0;
   text-align: center;
   text-decoration: none;
 

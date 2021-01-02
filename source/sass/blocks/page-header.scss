@@ -41,7 +41,7 @@
     &::after {
       position: absolute;
       top: 32px;
-      right: 18px;
+      right: 19px;
       width: 24px;
       height: 1.5px;
       content: "";
@@ -86,12 +86,12 @@
   @media (min-width: $tablet) {
     @include flex;
     justify-content: space-between;
-    padding: 42px 30px;
+    padding: 42px 30px 14px;
   }
 
   @media (min-width: $desktop) {
     @include container;
-    padding: 70px 110px;
+    padding: 70px 110px 0;
   }
 }
 
@@ -108,7 +108,10 @@
 }
 
 .page-header__logo {
-  display: contents;
+  @media (max-width: $mobile) {
+    @include flex;
+    align-items: center;
+  }
 }
 
 .page-header__toggle {
