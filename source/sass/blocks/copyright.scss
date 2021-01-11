@@ -5,12 +5,48 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet) {
-    width: 33%;
+    width: 23%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 13.5%;
   }
 }
 
 .copyright__link {
+  @include flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  color: $basic-grey-text;
+  transition: opacity $smooth-trn;
+
+  &:hover .copyright__logo {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  font-family: $basic-font-family;
   font-size: 16px;
   line-height: 1.1;
-  color: $basic-grey-text;
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop) {
+    left: 2px;
+  }
+}
+
+.copyright__logo {
+  position: relative;
+  top: -6px;
+  transition: fill $smooth-trn;
 }

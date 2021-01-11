@@ -1,7 +1,80 @@
 .social {
+  position: relative;
+  width: 100%;
+  padding-right: 78px;
+  padding-left: 73px;
   background-color: $basic-grey;
+
+  @media (max-width: $mobile) {
+    &::before {
+      position: absolute;
+      top: -22px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: $program-border;
+      box-shadow: 0 62px $program-border;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 40%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 23%;
+  }
 }
 
 .social__list {
   @include reset-list-style;
+  @include flex;
+  justify-content: space-between;
+}
+
+.social__icon {
+  color: #666666;
+  transition: color $smooth-trn,
+    opacity $smooth-trn;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon-vk {
+  @media (min-width: $tablet) {
+    position: relative;
+    top: 4px;
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__icon-insta {
+  position: relative;
+  top: 2px;
+  left: 2px;
+
+  @media (min-width: $tablet) {
+    top: 4px;
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__icon-fb {
+  position: relative;
+  top: -2px;
+
+  @media (min-width: $tablet) {
+    left: -1px;
+    width: 28px;
+    height: 33px;
+  }
 }

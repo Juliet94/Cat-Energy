@@ -1,0 +1,61 @@
+.logo {
+  transition: opacity $smooth-trn;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__mobile {
+  position: relative;
+  top: -2px;
+  display: none;
+  margin-right: 55px;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  &--footer {
+    display: block;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    top: -19px;
+    left: -20px;
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.logo__desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    position: relative;
+    top: -18px;
+    left: -20px;
+    display: block;
+  }
+}

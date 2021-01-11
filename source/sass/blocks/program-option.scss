@@ -14,7 +14,7 @@
 
 .program-option__title {
   position: relative;
-  margin-left: 70px;
+  margin-left: 71px;
   font-size: 24px;
   font-weight: inherit;
   line-height: 1.5;
@@ -24,8 +24,8 @@
 
   &::before {
     position: absolute;
-    top: -10px;
-    left: -67px;
+    top: -7px;
+    left: -68px;
     width: 50px;
     height: 50px;
     content: "";
@@ -35,8 +35,8 @@
 
   &--lose::after {
     position: absolute;
-    top: -10px;
-    left: -62px;
+    top: -11px;
+    left: -61px;
     width: 36px;
     height: 50px;
     content: "";
@@ -48,7 +48,7 @@
   &--gain::after {
     position: absolute;
     top: 5px;
-    left: -78px;
+    left: -77px;
     width: 67px;
     height: 28px;
     content: "";
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     margin-left: 2px;
     font-size: 36px;
     line-height: 1;
@@ -138,7 +138,7 @@
   @media (min-width: $tablet) {
     width: 63%;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -157,6 +157,15 @@
   text-decoration: none;
   color: $basic-black;
   text-transform: uppercase;
+  transition: opacity $smooth-trn;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    background-image: url("../img/svg/index-icon-arrow-long.svg");
+  }
 
   &::after {
     position: absolute;
@@ -172,7 +181,7 @@
   @media (max-width: $mobile) {
     &::before {
       position: absolute;
-      top: -10px;
+      top: -15px;
       width: 75vw;
       height: 1px;
       content: "";

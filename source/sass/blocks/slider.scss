@@ -1,5 +1,9 @@
 .slider {
   position: relative;
+
+  @media (min-width: $desktop) {
+    top: 2px;
+  }
 }
 
 .slider__text {
@@ -8,8 +12,20 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
+    position: relative;
     font-size: 20px;
     line-height: 1.5;
+    cursor: pointer;
+    border-bottom: 1px dashed fade-out($basic-black, 0.76);
+    transition: border-bottom $smooth-trn;
+
+    &:hover {
+      border-bottom: 1px solid fade-out($basic-black, 0.6);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -23,7 +39,7 @@
   border-radius: 6px;
 
   @media (min-width: $tablet) {
-    width: 80%;
+    width: 75%;
     height: 6px;
     background-color: $slider-scale;
     border: none;
@@ -44,16 +60,30 @@
   border-radius: 6px;
 
   @media (min-width: $tablet) {
-    top: -270%;
-    left: 50%;
+    top: -14px;
+    left: 46%;
     width: 34px;
     height: 34px;
+    cursor: pointer;
     background-color: $basic-white;
+    border: 1px solid $slider-border;
     border-radius: 100%;
+    box-shadow: $shadow-normal;
+    transition: box-shadow $smooth-trn,
+      border-color $smooth-trn;
+
+    &:hover {
+      box-shadow: $shadow-hover;
+    }
+
+    &:active {
+      border-color: $basic-green;
+      box-shadow: $shadow-pressed;
+    }
   }
 
   @media (min-width: $desktop) {
-    left: 46.5%;
+    left: 46%;
   }
 }
 
