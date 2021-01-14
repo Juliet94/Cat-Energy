@@ -6,6 +6,12 @@
   position: relative;
   background-color: transparent;
 
+  @media (max-width: $mobile) {
+    &--menu-closed {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet) {
     width: 62%;
     font-size: 18px;

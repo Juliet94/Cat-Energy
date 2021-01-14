@@ -59,25 +59,19 @@
 }
 
 .page-header--menu-closed {
-  @media (max-width: $mobile) {
-    .page-header__toggle {
+  .page-header__toggle {
+    width: 24px;
+    height: 16px;
+
+    &::before {
+      position: absolute;
+      top: 25px;
+      right: 20px;
       width: 24px;
-      height: 16px;
-
-      &::before {
-        position: absolute;
-        top: 25px;
-        right: 20px;
-        width: 24px;
-        height: 1.5px;
-        content: "";
-        background-color: $basic-black;
-        box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
-      }
-    }
-
-    .header-nav {
-      display: none;
+      height: 1.5px;
+      content: "";
+      background-color: $basic-black;
+      box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
     }
   }
 }
