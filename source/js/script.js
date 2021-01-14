@@ -8,4 +8,3 @@ buttonToggle.addEventListener('click', function () {
   mainMenu.classList.toggle('page-header--menu-closed');
   mainMenu.classList.toggle('page-header--menu-open');
 })
-
