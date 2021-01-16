@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
 
-<header class="page-header page-header--background page-header--menu-open">
+<header class="page-header page-header--background page-header--menu-nojs">
   <div class="page-header__wrapper">
     <div class="page-header__logo-wrapper">
       <a class="page-header__logo logo">
@@ -62,7 +62,7 @@
       </li>
       <li class="program__item program-option">
         <h3 class="program-option__title program-option__title--position program-option__title--gain">Набор массы</h3>
-        <p class="program-option__text">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!</p>
+        <p class="program-option__text">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые &nbsp<br>мышцы!</p>
         <a class="program-option__link" href="catalog.html">Каталог pro</a>
       </li>
     </ul>
@@ -165,7 +165,7 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Facebook</span>
-            <svg class="social__icon social__icon-fb" height="22" width="22" fill="currentColor" stroke="currentColor"><use xlink:href="img/svg/sprite/sprite.svg#icon-facebook"></use></svg>
+            <svg class="social__icon social__icon-fb" height="22" width="22" fill="none" stroke="currentColor"><use xlink:href="img/svg/sprite/sprite.svg#icon-facebook"></use></svg>
           </a>
         </li>
       </ul>
@@ -180,6 +180,8 @@
     </div>
   </div>
 </footer>
+
+<script src="js/script.min.js"></script>
 
 </body>
 </html>
