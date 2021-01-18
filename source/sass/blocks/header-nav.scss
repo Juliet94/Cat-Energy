@@ -1,9 +1,9 @@
 .header-nav {
+  position: relative;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
-  position: relative;
   background-color: transparent;
 
   @media (max-width: $mobile) {

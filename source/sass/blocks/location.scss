@@ -1,6 +1,5 @@
 .location {
   position: relative;
-  background-color: $basic-grey;
 }
 
 .location__wrapper {
@@ -10,6 +9,10 @@
   align-items: center;
   padding: 26px 23px 22px 19px;
   background-color: $basic-white;
+
+  &--background {
+    background-color: $basic-grey;
+  }
 
   @media (min-width: $tablet) {
     min-height: 201px;
