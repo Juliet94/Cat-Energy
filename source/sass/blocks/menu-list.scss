@@ -32,6 +32,10 @@
     width: 100%;
     min-height: 66px;
     border-top: 1px solid $header-border;
+
+    &--border {
+      border-bottom: 1px solid $header-border;
+    }
   }
 }
 
