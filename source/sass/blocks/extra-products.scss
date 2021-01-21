@@ -52,7 +52,7 @@
 
   @media (min-width: $tablet) {
     width: 58%;
-    margin-top: 55px;
+    margin-top: 52px;
     margin-bottom: 70px;
     padding-left: 37px;
     font-size: 36px;
@@ -115,12 +115,14 @@
       height: 1px;
       content: "";
       background-color: $slider-border;
-      box-shadow: 0 72px $slider-border,
-        0 144px $slider-border;
+      box-shadow: 0 140px $slider-border,
+        0 280px $slider-border;
     }
 
     @media (min-width: $desktop) {
       top: 72px;
+      box-shadow: 0 72px $slider-border,
+        0 144px $slider-border;
     }
   }
 }
@@ -145,18 +147,19 @@
   background-image: url("../img/catalog-gift-mobile.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 
   @media (min-width: $tablet) {
     min-height: 200px;
     margin-bottom: 75px;
-    background-image: url("../img/catalog-gift-tablet.jpg")
+    background-image: url("../img/catalog-gift-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     width: 245px;
     height: 289px;
     margin-bottom: 0;
-    background-image: url("../img/catalog-gift-desktop.jpg")
+    background-image: url("../img/catalog-gift-desktop.jpg");
   }
 }
 
@@ -172,7 +175,7 @@
 
   @media (min-width: $tablet) {
     top: 72px;
-    left: 423px;
+    left: 60%;
     text-align: left;
   }
 
@@ -194,7 +197,7 @@
 
     @media (min-width: $tablet) {
       top: -13px;
-      left: -48.5%;
+      left: -344px;
     }
 
     @media (min-width: $desktop) {

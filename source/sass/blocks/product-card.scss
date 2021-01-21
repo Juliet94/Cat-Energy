@@ -27,7 +27,9 @@
   }
 
   &--more {
-    padding: 12px 35px 30px;
+    @media (min-width: $desktop) {
+      padding: 12px 35px 30px;
+    }
   }
 }
 
