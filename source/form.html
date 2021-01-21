@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи: Форма</title>
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
@@ -80,24 +81,25 @@
       </label>
     </fieldset>
 
-    <fieldset class="selection-program__fieldset selection-program__fieldset--contacts selection-program__fieldset--decor">
-      <legend class="selection-program__legend selection-program__legend--contacts">Контактные данные (владельца кота)</legend>
+    <div class="selection-program__fieldset selection-program__fieldset--contacts selection-program__fieldset--decor">
+      <h2 class="selection-program__legend selection-program__legend--contacts">Контактные данные (владельца кота)</h2>
       <label class="selection-program__label selection-program__label--email"> E-mail:*
         <input class="selection-program__input selection-program__input--email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
       </label>
       <label class="selection-program__label selection-program__label--phone"> Телефон:*
         <input class="selection-program__input selection-program__input--phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
       </label>
-    </fieldset>
-    <fieldset class="selection-program__fieldset selection-program__fieldset--comment selection-program__fieldset--decor">
-      <legend class="selection-program__legend selection-program__legend--comment">Комментарий</legend>
+    </div>
+
+    <div class="selection-program__fieldset selection-program__fieldset--comment selection-program__fieldset--decor">
+      <h2 class="selection-program__legend selection-program__legend--comment">Комментарий</h2>
       <label>
         <textarea class="selection-program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
       </label>
-    </fieldset>
+    </div>
 
-    <fieldset class="selection-program__fieldset selection-program__fieldset--extra selection-program__fieldset--decor">
-      <legend class="selection-program__legend selection-program__legend--extra">Дополнительно</legend>
+    <div class="selection-program__fieldset selection-program__fieldset--extra selection-program__fieldset--decor">
+      <h2 class="selection-program__legend selection-program__legend--extra">Дополнительно</h2>
       <div class="selection-program__extra">
         <label class="selection-program__checkbox">
           <input class="visually-hidden" type="checkbox" name="sweetener" value="need-sweetener" checked>
@@ -116,7 +118,7 @@
           <span>Витамины</span>
         </label>
       </div>
-    </fieldset>
+    </div>
     <div class="selection-program__note">
       <button class="selection-program__button button-link" type="submit">Отправить заявку</button>
       <small class="selection-program__small">* &mdash; Обязательные поля</small>

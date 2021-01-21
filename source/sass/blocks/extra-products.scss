@@ -146,8 +146,8 @@
   background-color: $basic-green;
   background-image: url("../img/catalog-gift-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: contain;
 
   @media (min-width: $tablet) {
     min-height: 200px;
