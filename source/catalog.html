@@ -4,16 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи: Каталог</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
 
 <header class="page-header page-header--menu-nojs">
   <div class="page-header__wrapper">
     <div class="page-header__logo-wrapper">
-      <a class="page-header__logo logo">
-        <img class="logo__img" src="" alt="Логотип Кэт энерджи">
-        <img class="logo__img-text" src="" alt="Cat Energy">
+      <a class="page-header__logo logo" href="index.html">
+        <svg class="logo__mobile" height="38" width="34">
+          <use xlink:href="img/svg/sprite/sprite.svg#logo-cat-mobile"></use>
+        </svg>
+        <svg class="logo__text" height="18" width="101">
+          <use xlink:href="img/svg/sprite/sprite.svg#logo-catenergy"></use>
+        </svg>
+        <svg class="logo__tablet" height="52" width="174">
+          <use xlink:href="img/svg/sprite/sprite.svg#logo-cat-tablet"></use>
+        </svg>
+        <svg class="logo__desktop" height="59" width="202">
+          <use xlink:href="img/svg/sprite/sprite.svg#logo-cat-desktop"></use>
+        </svg>
       </a>
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -31,7 +42,7 @@
             Каталог продукции
           </a>
         </li>
-        <li class="menu-list__item">
+        <li class="menu-list__item menu-list__item--border">
           <a class="menu-list__link" href="form.html">
             Подбор программы
           </a>
@@ -43,7 +54,7 @@
 
 <main class="page-main">
   <div class="page-main__heading">
-    <h1 class="page-main__title">Каталог продукции</h1>
+    <h1 class="page-main__title page-main__title--catalog">Каталог продукции</h1>
   </div>
 
   <section class="main-products">
@@ -52,7 +63,14 @@
       <ul class="main-products__list">
         <li class="main-products__item product-card">
           <a class="product-card__img-link" href="#">
-            <img src="" alt="Изображение оранжевой упаковки добавки с курицей 500г">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog-orange-can-desktop.webp 1x, img/catalog-orange-can-desktop@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/catalog-orange-can-tablet.webp 1x, img/catalog-orange-can-tablet@x2.webp 2x" type="image/webp">
+              <source srcset="img/catalog-orange-can-mobile.webp 1x, img/catalog-orange-can-mobile@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/catalog-orange-can-desktop.png 1x, img/catalog-orange-can-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog-orange-can-tablet.png 1x, img/catalog-orange-can-tablet@x2.png 2x">
+              <img class="product-card__img product-card__img--orange-small" alt="Изображение оранжевой упаковки добавки с курицей 500г" src="img/catalog-orange-can-mobile.png" srcset="img/catalog-orange-can-mobile@x2.png 2x">
+            </picture>
           </a>
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Cat energy pro 500 г</a>
@@ -75,7 +93,14 @@
         </li>
         <li class="main-products__item product-card">
           <a class="product-card__img-link" href="#">
-            <img src="" alt="Изображение оранжевой упаковки добавки с курицей 1000г">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog-orange-can-big-desktop.webp 1x, img/catalog-orange-can-big-desktop@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/catalog-orange-can-big-tablet.webp 1x, img/catalog-orange-can-big-tablet@x2.webp 2x" type="image/webp">
+              <source srcset="img/catalog-orange-can-big-mobile.webp 1x, img/catalog-orange-can-big-mobile@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/catalog-orange-can-big-desktop.png 1x, img/catalog-orange-can-big-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog-orange-can-big-tablet.png 1x, img/catalog-orange-can-big-tablet@x2.png 2x">
+              <img class="product-card__img product-card__img--big" alt="Изображение оранжевой упаковки добавки с курицей 1000г" src="img/catalog-orange-can-big-mobile.png" srcset="img/catalog-orange-can-big-mobile@x2.png 2x">
+            </picture>
           </a>
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Cat energy pro 1000 г</a>
@@ -98,7 +123,14 @@
         </li>
         <li class="main-products__item product-card">
           <a class="product-card__img-link" href="#">
-            <img src="" alt="Изображение зеленой упаковки добавки с рыбой 500г">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog-green-can-desktop.webp 1x, img/catalog-green-can-desktop@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/catalog-green-can-tablet.webp 1x, img/catalog-green-can-tablet@x2.webp 2x" type="image/webp">
+              <source srcset="img/catalog-green-can-mobile.webp 1x, img/catalog-green-can-mobile@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/catalog-green-can-desktop.png 1x, img/catalog-green-can-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog-green-can-tablet.png 1x, img/catalog-green-can-tablet@x2.png 2x">
+              <img class="product-card__img" alt="Изображение зеленой упаковки добавки с рыбой 500г" src="img/catalog-green-can-mobile.png" srcset="img/catalog-green-can-mobile@x2.png 2x">
+            </picture>
           </a>
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Cat energy pro 500 г</a>
@@ -121,7 +153,14 @@
         </li>
         <li class="main-products__item product-card">
           <a class="product-card__img-link" href="#">
-            <img src="" alt="Изображение зеленой упаковки добавки с рыбой 1000г">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog-green-can-big-desktop.webp 1x, img/catalog-green-can-big-desktop@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/catalog-green-can-big-tablet.webp 1x, img/catalog-green-can-big-tablet@x2.webp 2x" type="image/webp">
+              <source srcset="img/catalog-green-can-big-mobile.webp 1x, img/catalog-green-can-big-mobile@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/catalog-green-can-big-desktop.png 1x, img/catalog-green-can-big-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog-green-can-big-tablet.png 1x, img/catalog-green-can-big-tablet@x2.png 2x">
+              <img class="product-card__img product-card__img--big" alt="Изображение зеленой упаковки добавки с рыбой 1000г" src="img/catalog-green-can-big-mobile.png" srcset="img/catalog-green-can-big-mobile@x2.png 2x">
+            </picture>
           </a>
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Cat energy pro 1000 г</a>
@@ -144,7 +183,14 @@
         </li>
         <li class="main-products__item product-card">
           <a class="product-card__img-link" href="#">
-            <img src="" alt="Изображение синей упаковки добавки с гречкой 500г">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog-blue-can-desktop.webp 1x, img/catalog-blue-can-desktop@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/catalog-blue-can-tablet.webp 1x, img/catalog-blue-can-tablet@x2.webp 2x" type="image/webp">
+              <source srcset="img/catalog-blue-can-mobile.webp 1x, img/catalog-blue-can-mobile@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/catalog-blue-can-desktop.png 1x, img/catalog-blue-can-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog-blue-can-tablet.png 1x, img/catalog-blue-can-tablet@x2.png 2x">
+              <img class="product-card__img product-card__img--blue-small" alt="Изображение синей упаковки добавки с гречкой 500г" src="img/catalog-blue-can-mobile.png" srcset="img/catalog-blue-can-mobile@x2.png 2x">
+            </picture>
           </a>
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Cat energy slim 500 г</a>
@@ -167,7 +213,14 @@
         </li>
         <li class="main-products__item product-card">
           <a class="product-card__img-link" href="#">
-            <img src="" alt="Изображение синей упаковки добавки с гречкой 1000г">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog-blue-can-big-desktop.webp 1x, img/catalog-blue-can-big-desktop@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/catalog-blue-can-big-tablet.webp 1x, img/catalog-blue-can-big-tablet@x2.webp 2x" type="image/webp">
+              <source srcset="img/catalog-blue-can-big-mobile.webp 1x, img/catalog-blue-can-big-mobile@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/catalog-blue-can-big-desktop.png 1x, img/catalog-blue-can-big-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog-blue-can-big-tablet.png 1x, img/catalog-blue-can-big-tablet@x2.png 2x">
+              <img class="product-card__img product-card__img--big" alt="Изображение синей упаковки добавки с гречкой 1000г" src="img/catalog-blue-can-big-mobile.png" srcset="img/catalog-blue-can-big-mobile@x2.png 2x">
+            </picture>
           </a>
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Cat energy slim 1000 г</a>
@@ -190,7 +243,14 @@
         </li>
         <li class="main-products__item product-card">
           <a class="product-card__img-link" href="#">
-            <img src="" alt="Изображение фиолетовой упаковки добавки с рисом 500г">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/catalog-violet-can-desktop.webp 1x, img/catalog-violet-can-desktop@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/catalog-violet-can-tablet.webp 1x, img/catalog-violet-can-tablet@x2.webp 2x" type="image/webp">
+              <source srcset="img/catalog-violet-can-mobile.webp 1x, img/catalog-violet-can-mobile@x2.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/catalog-violet-can-desktop.png 1x, img/catalog-violet-can-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog-violet-can-tablet.png 1x, img/catalog-violet-can-tablet@x2.png 2x">
+              <img class="product-card__img" alt="Изображение фиолетовой упаковки добавки с рисом 500г" src="img/catalog-violet-can-mobile.png" srcset="img/catalog-violet-can-mobile@x2.png 2x">
+            </picture>
           </a>
           <h3 class="product-card__title">
             <a class="product-card__title-link" href="#">Cat energy slim 500 г</a>
@@ -211,7 +271,7 @@
           </table>
           <a class="product-card__link button-link" href="#">Заказать</a>
         </li>
-        <li class="main-products__item product-card">
+        <li class="main-products__item product-card product-card--more">
           <h3 class="product-card__title-more">Показать еще 100500 товаров</h3>
           <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
           <a class="product-card__link-more" href="#">Показать все</a>
@@ -222,7 +282,7 @@
   </section>
 
   <section class="extra-products">
-    <div class="extra-products__wrapper">
+    <div class="extra-products__wrapper extra-products__wrapper--decor">
       <h2 class="extra-products__title">Дополнительные товары</h2>
       <ul class="extra-products__list">
         <li class="extra-products__item extra-product-card">
@@ -235,7 +295,7 @@
         </li>
         <li class="extra-products__item extra-product-card">
           <h3 class="extra-product-card__title">Питьевая вода</h3>
-          <div class="extra-product-card__text-wrapper">
+          <div class="extra-product-card__text-wrapper extra-product-card__text-wrapper--position">
             <span class="extra-product-card__text">5 литров</span>
             <span class="extra-product-card__text">50 Р.</span>
           </div>
@@ -269,38 +329,49 @@
 
   <section class="page-footer__location location">
     <h2 class="visually-hidden">Адрес магазина</h2>
-    <div class="location__wrapper">
+    <div class="location__wrapper location__wrapper--background">
       <p class="location__slogan">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
       <div class="location__address">
         <p class="location__street">ул.Большая <br> Конюшенная, д. 19/8</p>
         <span>Санкт-Петербург</span>
       </div>
     </div>
-    <iframe class="location__map"
+    <iframe allowfullscreen="" aria-hidden="false" class="location__map" height="362"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4114.250074504224!2d30.324396429938936!3d59.93939762075931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607085306655!5m2!1sru!2sru;iwlock=NoSuchMarker;"
-            width="320" height="362" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            style="border: 0;" tabindex="0" width="320"></iframe>
   </section>
   <div class="page-footer__wrapper">
-    <a class="page-footer__logo logo logo--footer">
-      <img src="" alt="Cat Energy">
+    <a class="page-footer__logo logo">
+      <svg class="logo__text logo__text--footer" height="24" width="128">
+        <use xlink:href="img/svg/sprite/sprite.svg#logo-catenergy"></use>
+      </svg>
     </a>
 
     <section class="page-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a href="#" class="social__link">
+          <a class="social__link" href="#">
             <span class="visually-hidden">VKontakte</span>
+            <svg class="social__icon social__icon-vk" height="16" width="23" fill="currentColor">
+              <use xlink:href="img/svg/sprite/sprite.svg#icon-vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Instagram</span>
+            <svg class="social__icon social__icon-insta" height="16" width="16" fill="currentColor">
+              <use xlink:href="img/svg/sprite/sprite.svg#icon-instagram"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Facebook</span>
+            <svg class="social__icon social__icon-fb" height="22" width="22" fill="none" stroke="currentColor">
+              <use xlink:href="img/svg/sprite/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -308,13 +379,17 @@
 
     <div class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Разработчик сайта</h2>
-      <span>HTML Academy</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="" alt="Логотип HTML Academy">
+        <span class="copyright__text">HTML Academy</span>
+        <svg class="copyright__logo" height="34" width="27" fill="#666666">
+          <use xlink:href="img/svg/sprite/sprite.svg#logo-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </div>
 </footer>
+
+<script src="js/script.min.js"></script>
 
 </body>
 </html>

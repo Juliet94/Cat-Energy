@@ -19,12 +19,29 @@
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
-    grid-row-gap: 140px;
+    grid-row-gap: 127px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
-    grid-row-gap: 144px;
+    grid-row-gap: 132px;
+  }
+}
+
+.main-products__item {
+  position: relative;
+  margin-bottom: 13px;
+
+  @media (max-width: $mobile) {
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: -20px;
+      width: 150%;
+      height: 1px;
+      content: "";
+      background-color: $catalog-border;
+    }
   }
 }

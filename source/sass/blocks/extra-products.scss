@@ -1,4 +1,5 @@
 .extra-products__wrapper {
+  position: relative;
   padding: 0 20px;
 
   @media (min-width: $tablet) {
@@ -8,19 +9,61 @@
   @media (min-width: $desktop) {
     @include container;
     display: grid;
+    margin-bottom: 40px;
     padding: 0 110px;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3.7fr 1fr;
     grid-column-gap: 80px;
+  }
+
+  &--decor::before {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: $basic-green;
+
+    @media (min-width: $tablet) {
+      top: 22px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop) {
+      top: 83px;
+      left: -100%;
+      z-index: -10;
+      width: 1000%;
+      height: 2px;
+    }
   }
 }
 
 .extra-products__title {
+  z-index: 10;
+  width: 88%;
+  margin-bottom: 32px;
   font-size: 24px;
   font-weight: inherit;
   line-height: 1;
   color: $basic-black;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet) {
+    width: 58%;
+    margin-top: 55px;
+    margin-bottom: 70px;
+    padding-left: 37px;
+    font-size: 36px;
+  }
 
   @media (min-width: $desktop) {
+    width: 34%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left: -37px;
+    padding-left: 37px;
     grid-column: 1 / 3;
   }
 }
@@ -28,26 +71,135 @@
 .extra-products__list {
   @include reset-list-style;
   display: grid;
+  margin-bottom: 45px;
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    margin-bottom: 39px;
+    padding: 20px 38px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    grid-row-gap: 22px;
+  }
+
+  &::before {
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 100%;
+      height: 93%;
+      content: "";
+      border: 1px solid $slider-border;
+    }
+
+    @media (min-width: $desktop) {
+      top: 0;
+      height: 97.5%;
+      border-right: none;
+      border-left: none;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: 148px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background-color: $slider-border;
+      box-shadow: 0 72px $slider-border,
+        0 144px $slider-border;
+    }
+
+    @media (min-width: $desktop) {
+      top: 72px;
+    }
+  }
+}
+
+.extra-products__item {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-products__all {
   width: 100%;
   min-height: 289px;
+  margin-bottom: 35px;
   background-color: $basic-green;
+  background-image: url("../img/catalog-gift-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (min-width: $tablet) {
     min-height: 200px;
+    margin-bottom: 75px;
+    background-image: url("../img/catalog-gift-tablet.jpg")
   }
 
   @media (min-width: $desktop) {
-    min-height: 289px;
+    width: 245px;
+    height: 289px;
+    margin-bottom: 0;
+    background-image: url("../img/catalog-gift-desktop.jpg")
   }
 }
 
 .extra-products__all-text {
+  position: relative;
+  top: 186px;
+  left: 0;
   font-family: $basic-font-family;
   font-size: 16px;
   line-height: 1.25;
+  text-align: center;
   color: $basic-white;
+
+  @media (min-width: $tablet) {
+    top: 72px;
+    left: 423px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    top: 171px;
+    left: 0;
+    text-align: center;
+  }
+
+  &::before {
+    position: absolute;
+    top: -128px;
+    left: 36%;
+    width: 78px;
+    height: 80px;
+    content: "";
+    background-image: url("../img/svg/catalog-icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      top: -13px;
+      left: -48.5%;
+    }
+
+    @media (min-width: $desktop) {
+      top: -130px;
+      left: 35%;
+    }
+  }
 }

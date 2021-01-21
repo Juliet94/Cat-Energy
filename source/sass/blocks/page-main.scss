@@ -1,5 +1,5 @@
 .page-main {
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .page-main__heading {
@@ -29,6 +29,17 @@
   @media (min-width: $desktop) {
     margin-top: 58px;
     margin-left: 110px;
+  }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+      margin-bottom: 164px;
+      margin-left: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 110px;
+    }
   }
 }
 
