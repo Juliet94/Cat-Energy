@@ -52,7 +52,7 @@
   </div>
   <form class="page-main__form selection-program" method="post" action="https://echo.htmlacademy.ru/">
 
-    <fieldset class="selection-program__fieldset selection-program__fieldset--info">
+    <fieldset class="selection-program__wrapper selection-program__wrapper--info">
       <legend class="visually-hidden">Основная информация</legend>
       <label class="selection-program__label"> Имя:*
         <input class="selection-program__input" type="text" placeholder="Барсик" name="pet-name" required>
@@ -65,7 +65,7 @@
       </label>
     </fieldset>
 
-    <fieldset class="selection-program__fieldset selection-program__fieldset--radio">
+    <fieldset class="selection-program__wrapper selection-program__wrapper--radio">
       <legend class="visually-hidden">Цель программы</legend>
       <label class="selection-program__radio">
         <input class="visually-hidden" type="radio" name="goal" value="lose-weight" checked>
@@ -81,8 +81,8 @@
       </label>
     </fieldset>
 
-    <div class="selection-program__fieldset selection-program__fieldset--contacts selection-program__fieldset--decor">
-      <h2 class="selection-program__legend selection-program__legend--contacts">Контактные данные (владельца кота)</h2>
+    <div class="selection-program__wrapper selection-program__wrapper--contacts selection-program__wrapper--decor">
+      <h2 class="selection-program__heading selection-program__heading--contacts">Контактные данные (владельца кота)</h2>
       <label class="selection-program__label selection-program__label--email"> E-mail:*
         <input class="selection-program__input selection-program__input--email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
       </label>
@@ -91,15 +91,15 @@
       </label>
     </div>
 
-    <div class="selection-program__fieldset selection-program__fieldset--comment selection-program__fieldset--decor">
-      <h2 class="selection-program__legend selection-program__legend--comment">Комментарий</h2>
+    <div class="selection-program__wrapper selection-program__wrapper--comment selection-program__wrapper--decor">
+      <h2 class="selection-program__heading selection-program__heading--comment">Комментарий</h2>
       <label>
         <textarea class="selection-program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
       </label>
     </div>
 
-    <div class="selection-program__fieldset selection-program__fieldset--extra selection-program__fieldset--decor">
-      <h2 class="selection-program__legend selection-program__legend--extra">Дополнительно</h2>
+    <div class="selection-program__wrapper selection-program__wrapper--extra selection-program__wrapper--decor">
+      <h2 class="selection-program__heading selection-program__heading--extra">Дополнительно</h2>
       <div class="selection-program__extra">
         <label class="selection-program__checkbox">
           <input class="visually-hidden" type="checkbox" name="sweetener" value="need-sweetener" checked>
